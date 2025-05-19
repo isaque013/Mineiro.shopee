@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achados Premium</title>
+  <link href="Mineiro.site.css" rel="stylesheet">
+  <head>
+  
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Achados Premium do Dia!</h1>
+    <p>Promoções IMPERDÍVEIS que você não pode perder</p>
+  </header>
+
+  <div class="container">
+    <div class="cta">
+      <p>💥 Itens virais, cupons escondidos e ofertas por tempo LIMITADO.</p>
+      <a href="#">🔗 Acesse Agora</a>
+    </div>
+
+    <div class="list">
+      <h2>🔥 Categorias em destaque:</h2>
+      <ul>
+        <li onclick="scrollToSection('moda')">📦 Moda e Estilo</li>
+        <li onclick="scrollToSection('eletronicos')">📱 Eletrônicos e Gadgets</li>
+        <li onclick="scrollToSection('casa')">🏠 Casa e Decoração</li>
+        <li onclick="scrollToSection('beleza')">🧴 Beleza e Cuidados</li>
+        <li onclick="scrollToSection('presentes')">🎁 Presentes e Criativos</li>
+      </ul>
+    </div>
+
+    <!-- Moda -->
+    <div class="products-section" id="moda">
+      <h2>📦 Moda e Estilo</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/calca-jeans-balao.jpg.jpg" alt="Calça Jeans Balão">
+          <h3>Calça Jeans Balão</h3>
+          <p>R$ 61,99</p>
+          <a href="https://s.shopee.com.br/707bp9YVFS?share_channel_code=1" target="_blank"><strong>Comprar</strong></a>
+        </div>
+        <div class="product">
+          <img src="images/Imagem do WhatsApp de 2025-05-15 à(s) 19.32.17_06d5b763.jpg" alt="Calça Cargo Masculina">
+          <h3>Calça jeans balão unissex</h3>
+          <p>R$ 60,30</p>
+          <a href="https://s.shopee.com.br/4fjh33zQlF?share_channel_code=1" target="_blank"><strong>Comprar</strong></a>
+        </div>
+        <div class="product">
+          <img src="images/camisa.jesus.king.jpg" alt="Calça Cargo Masculina">
+          <h3>Calça jeans balão unissex</h3>
+          <p>R$ 60,30</p>
+          <a href="https://s.shopee.com.br/2Vf7FppDWc?share_channel_code=1" target="_blank"><strong>Comprar</strong></a>
+        </div>
+    
+      </div>
+    </div>
+
+    <!-- Outras categorias vazias (pode preencher depois) -->
+    <div class="products-section" id="eletronicos">
+      <h2>📱 Eletrônicos e Gadgets</h2>
+      <div class="product-grid"></div>
+    </div>
+
+    <div class="products-section" id="casa">
+      <h2>🏠 Casa e Decoração</h2>
+      <div class="product-grid"></div>
+    </div>
+
+    <div class="products-section" id="beleza">
+      <h2>🧴 Beleza e Cuidados</h2>
+      <div class="product-grid"></div>
+    </div>
+
+    <div class="products-section" id="presentes">
+      <h2>🎁 Presentes e Criativos</h2>
+      <div class="product-grid"></div>
+    </div>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.warn('Elemento com id "' + id + '" não encontrado.');
+      }
+    }
+  </script>
+</body>
+</html>
+
+          
+
+
+
